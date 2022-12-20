@@ -8,7 +8,7 @@ const { words } = require("../controller/randomWord");
 const router = express.Router();
 
 router.post("/addplayer",addPlayer)
-router.post("/addscore/:id",addScore)
+router.patch("/addscore/:id",addScore)
 router.get("/allplayer", allPlayer)
 router.get("/game", words)
 
