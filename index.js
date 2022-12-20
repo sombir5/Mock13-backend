@@ -5,7 +5,7 @@ const connect = require("./src/config/db");
 const game=require("./src/routers/router")
 dotenv.config();
 const app = express();
-const PORT = process.env || 8080;
+const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(cors());
 
